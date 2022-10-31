@@ -1,0 +1,379 @@
+/* region normalize*/
+/*! normalize.scss v0.1.0 | MIT License | based on git.io/normalize */
+html {
+    font-family: sans-serif;
+    -ms-text-size-adjust: 100%;
+    -webkit-text-size-adjust: 100%
+}
+
+body {
+    margin: 0;
+    font-family: cursive;
+}
+
+
+a:link, a:visited {
+    text-decoration: none;
+    color: #7878ff
+}
+
+a:link:hover, a:visited:hover {
+    color: #a6a6ff
+}
+
+.birdy {
+    position: absolute;
+    top: 28px;
+    right: 28px;
+    font-size: 21px
+}
+
+.home .intro {
+    text-align: center;
+    min-height: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+
+.home .intro > div {
+    padding: 85px 0
+}
+
+.home .intro > div canvas {
+    margin-bottom: 12px;
+    max-width: 256px;
+    width: 50vw
+}
+
+.home .intro > div h1 {
+    margin-bottom: 0
+}
+
+.home .intro > div p {
+    color: lightgray;
+}
+
+.home .intro > div a {
+    margin-top: 28px;
+    font-size: 13pt;
+    display: block
+}
+
+.home .credits-section {
+    margin: 0 -20px;
+    position: relative
+}
+
+.home .credits-section a {
+    vertical-align: middle;
+    padding: 12px 20px;
+    display: inline-block;
+    box-sizing: border-box;
+    white-space: nowrap;
+    word-wrap: break-word;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    position: relative;
+    top: -7px;
+    width: 33%
+}
+
+@media (max-width: 700px) {
+    .home .credits-section a {
+        width: 50%
+    }
+}
+
+@media (max-width: 500px) {
+    .home .credits-section a {
+        width: 100%
+    }
+}
+
+
+
+.section {
+    text-align: center;
+    padding: 40px 20px
+}
+
+.section > h2 {
+    margin-top: 0
+}
+
+.section > div {
+    margin: 0 auto;
+    max-width: 800px;
+    text-align: initial;
+    overflow-x: hidden
+}
+
+.section-release > a {
+    margin-top: 20px;
+    display: inline-block
+}
+
+.piedDePage {
+    font-size: 12px
+}
+
+hr {
+    border: none;
+    border-top: 1px solid rgba(255, 255, 255, 0.3)
+}
+
+.mainForm {
+    text-align: left
+}
+
+.bouttonValider {
+    background-color: #191919;
+    margin-right: 100px;
+    margin-top: 10px
+}
+
+.fondCode {
+    background-color: #191919
+}
+
+/*endregion*/
+
+html{
+    scroll-behavior: smooth;
+}
+
+.section-release, .qestionsFrequentes, .secTimer {
+    background: #553F31;
+}
+
+.intro, .carteDuMonde, .footer, .conditions {
+    background: #191919;
+}
+
+p, h1, h2, h3, h4, h5, h6, li, input, span, label {
+    color: white;
+}
+
+
+/* Téléphone */
+@media only screen and (min-width: 100px) {
+    .w3-quarter{
+        width: 100%;
+    }
+
+    div.instructions {
+        height: 0;
+        position: relative;
+        padding-left: 50px;
+        padding-right: 20px
+    }
+
+    div.Div_conteneurTexteEchecReussite {
+        position: relative;
+        margin-left: 20px;
+        margin-right: 20px;
+        margin-top: 50px !important;
+        text-align: left
+    }
+
+    div.Div_btnValiderForms {
+        text-align: left;
+        display: inline-block;
+    }
+
+    .fondCode {
+        display: inline-block
+    }
+
+    .widgetDiscord {
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .divAPropos {
+        width: auto
+    }
+
+    div.intro{
+        background-position: center;
+    }
+}
+
+@media only screen and (min-width: 824px) {
+    .divAPropos {
+        width: 600px
+    }
+}
+
+/* Tablette */
+@media only screen and (min-width: 601px) {
+    #firstDivPropos, #secondDivPropos {
+        text-align: center;
+        display: flex;
+        margin: auto;
+    }
+    .w3-quarter{
+        display: inline-block;
+        width: 50%;
+        padding: 0 20px 0 20px;
+    }
+}
+
+/* PC */
+@media only screen and (min-width: 1141px) {
+    .w3-quarter{
+        display: inline-block;
+        width: 23%;
+        padding: 0 20px 0 20px;
+        vertical-align: top;
+    }
+
+    #firstDivPropos, #secondDivPropos {
+        text-align: center;
+        display: contents;
+        margin: auto;
+    }
+
+    div.instructions {
+        position: absolute;
+        margin-left: 450px;
+        margin-top: 60px;
+    }
+
+    div.Div_conteneurTexteEchecReussite {
+        display: contents;
+    }
+
+    div.Div_btnValiderForms {
+        text-align: right;
+        display: inline-block;
+    }
+
+    .conteneurTexteEchecReussite {
+        margin-right: 20px;
+    }
+
+    div.intro{
+        background-position: initial;
+    }
+}
+
+div.intro {
+    background-image: url("img/assomption.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    backdrop-filter: brightness(20%);
+}
+
+/*region Barre supérieure*/
+#barre_haut {
+    right: 0;
+    position: absolute;
+    padding-right: 40px;
+    z-index: 4;
+}
+
+#icon_instagramm {
+    width: 66px;
+    display: inline;
+    padding-right: 40px;
+}
+
+#icon_facebook {
+    width: 33px;
+    display: inline;
+    padding-right: 20px;
+}
+
+/*endregion*/
+
+/* region Interrupteur changement de langue*/
+#interrupteur {
+    display: inline;
+    text-align: right;
+    padding-right: 40px;
+}
+
+.switch {
+    position: relative;
+    display: inline-block;
+    width: 60px;
+    height: 34px;
+}
+
+.switch input {
+    opacity: 0;
+    width: 0;
+    height: 0;
+}
+
+.slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #7878ff;
+    -webkit-transition: .4s;
+    transition: .4s;
+}
+
+.slider:before {
+    position: absolute;
+    content: "";
+    height: 26px;
+    width: 26px;
+    left: 4px;
+    bottom: 4px;
+    background-color: white;
+    -webkit-transition: .4s;
+    transition: .4s;
+}
+
+input:checked + .slider {
+    background-color: #7878ff;
+}
+
+input:focus + .slider {
+    box-shadow: 0 0 1px #7878ff;
+}
+
+input:checked + .slider:before {
+    -webkit-transform: translateX(26px);
+    -ms-transform: translateX(26px);
+    transform: translateX(26px);
+}
+
+/* Rounded sliders */
+.slider.round {
+    border-radius: 34px;
+}
+
+.slider.round:before {
+    border-radius: 50%;
+}
+
+.btnperso {
+    color: white;
+    font-size: 1.2em;
+    display: inline-block;
+    vertical-align: -24%;
+}
+
+/*endregion*/
+
+.ssElemAPropos {
+    width: 350px;
+    text-align: center;
+}
+
+.footer p, .footer img {
+    font-size: 13px;
+    color: #CDCDCD;
+    margin-top: 0;
+    margin-bottom: 5px;
+    margin-left: 15%;
+}
