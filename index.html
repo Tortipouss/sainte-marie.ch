@@ -10,6 +10,7 @@ Licence de la carte du monde : https://github.com/StephanWagner/svgMap/blob/mast
     <meta charset="utf-8">
     <title>Tout pour Marie !</title>
 
+    <!-- Police d'écriture Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Capriola&display=swap" rel="stylesheet">
@@ -22,7 +23,6 @@ Licence de la carte du monde : https://github.com/StephanWagner/svgMap/blob/mast
     <!-- CSS -->
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="w3.css">
-    <link rel="stylesheet" href="google.css">
 
     <link rel="icon" type="image/png" sizes="32x32" href="img/logo.png">
 </head>
@@ -32,23 +32,24 @@ Licence de la carte du monde : https://github.com/StephanWagner/svgMap/blob/mast
     <!-- Barre suprérieure (insta, FB, ...) -->
     <div id="barre_haut">
 
-        <!-- Interrupteur -->
         <div>
             <p><!-- Crée par alex--></p>
         </div>
 
 
     </div>
+
+    <!-- SECTION ACCUEIL -->
     <div class="intro">
-        <div class="fondParticules">
+        <div>
 
             <!-- LOGO -->
             <a href="https://sainte-marie.ch/"> <img id="mainImage" alt="logo du site" src="img/logo.png"
                  width="150" style="filter: drop-shadow(2px 4px 6px black)"/>
             </a>
 
-            <h1 id="titreEP">Tout pour Marie</h1>
-            <p id="equipeWhiteHatAxee">Blog catholique de dévotion envers Marie</p>
+            <h1 id="titrePageAccueil">Tout pour Marie</h1>
+            <p id="descriptionPageAccueil">Blog catholique de dévotion envers Marie</p>
 
             <!-- GIF fleche vers le bas sur l'accueil -->
             <a href="#about"><img alt="fleche vers le bas" src="img/arrow.gif"
@@ -57,60 +58,77 @@ Licence de la carte du monde : https://github.com/StephanWagner/svgMap/blob/mast
     </div>
 
     <!-- SECTION RESSOURCES -->
-    <div class="w3-container section-release" style="padding:40px 16px;" id="about">
-        <h1 class="w3-center" id="aProposDeEquipe">Ressources</h1>
+    <div class="w3-container section-release" id="about" style="padding:40px 16px;">
+        <h1 class="w3-center">Ressources</h1>
 
-        <div class="divAPropos" style="margin-left: auto;margin-right:auto">
-            <p id="aProposContent" style="text-align: left;padding: 0 30px;">
+        <div class="divPresentationSection" style="margin-left: auto;margin-right:auto">
+            <p style="text-align: left;padding: 0 30px;">
                 Difficile de s'imaginer la quantité de prières que l'on aura pu créer en deux-milles ans de dévotion à la sainte vierge.<br>
                 En voici parmis les plus belles ;
             </p>
         </div>
         <div class="w3-row-padding w3-center" style="margin-top:64px">
-            <div id="firstDivPropos">
+            <div class="conteneurLigneArticle">
                     <div class="w3-quarter">
                         <a href="tel/petit_office_de_la_vierge_marie.pdf">
-                            <img alt="horloge" src="img/marie-enfant.jpg" style="padding: 20px 0 0 0;" width="150"/>
-                            <p class="w3-large" id="titreCtfRegulier"><strong>Petit office de la sainte Vierge</strong></p>
+                            <img src="img/marie-enfant.jpg" style="padding: 20px 0 0 0;" width="150"/>
+                            <p class="w3-large"><strong>Petit office de la sainte Vierge</strong></p>
                         </a>
-                        <p id="contentCtfRegulier">Version "légère" du petit office de la sainte vierge en version pdf. A noter
+                        <p>Version "légère" du petit office de la sainte vierge en version pdf. A noter
                         que si un interet se démarque, vous pouvez acheter la version intégrale sous forme d'un livre (464 pages de prières !)
                         directement en librairie <a href="https://www.payot.ch/Detail/petit_office_de_la_sainte_vierge-editions_sainte_madeleine-9782372880114" target="_blank">Payot</a>.</p>
                     </div>
                 <div class="w3-quarter">
                     <a href="tel/rosaire.pdf">
-                        <img alt="horloge" src="img/marie1.jpg" style="padding: 20px 0 0 0" width="150"/>
-                        <p class="w3-large" id="titreNouvContacts"><strong>Prières du rosaire</strong></p>
+                        <img src="img/marie1.jpg" style="padding: 20px 0 0 0" width="150"/>
+                        <p class="w3-large"><strong>Prières du rosaire</strong></p>
                     </a>
-                    <p id="contentNouvContacts">A prier tous les jours ! Les prières latines du rosaire sont
+                    <p>A prier tous les jours ! Les prières latines du rosaire sont
                     aussi particulièrement belles et peuvent être trouvé <a href="https://traditionalcatholicprayers.com/2019/11/12/how-to-pray-the-rosary-in-latin/" target="_blank">ici</a>.</p>
                 </div>
             </div>
-            <div id="secondDivPropos">
+            <div class="conteneurLigneArticle">
                 <div class="w3-quarter">
-                    <img alt="horloge" src="img/sacre-coeur-de-jesus.jpg" style="padding: 20px 0 0 0" width="140"/>
-                    <p class="w3-large" id="titreAideEtudes"><strong>Scapulaire sacré-coeur de Jésus</strong></p>
-                    <p id="contentAideEtudes">Le coeur sacré de Marie permet de se rapprocher du coeur de Jésus.
-                    Ce scapulaire, une fois béni et imposé par un prêtre ou un diacre, permettera de s'engager dans une dévotion envers le sacré coeur de Marie et donc envers le coeur de Jésus.
-                    Ce scapulaire est disponible chez les éditions <a href="https://parvis.ch/fr/chapelets-croix-divers/scapulaire-blanc-du-sacre-coeur" target="_blank">Parvis</a></p>
-                </div>
-                <div class="w3-quarter">
-                    <img alt="horloge" src="img/stAnneEtMarie.jpg" style="padding: 20px 0 0 0" width="150"/>
-                    <p class="w3-large" id="titreTousLesNiv"><strong>Bonus</strong></p>
-                    <p id="contentTousLesNiv">
-                        Cette page est en construction.
+                    <a href="articles/scapulaire_sacre_coeur_de_Jesus">
+                        <img src="img/sacre-coeur-de-jesus.jpg" style="padding: 20px 0 0 0" width="140"/>
+                        <p class="w3-large" ><strong>Scapulaire sacré-coeur de Jésus</strong></p>
+                    </a>
+                    <p>
+                        Le coeur sacré de Marie permet de se rapprocher du coeur de Jésus. <br>
+                        Ce scapulaire, une fois béni et imposé par un prêtre ou un diacre, permettera de s'engager dans une dévotion envers le sacré coeur de Marie et donc envers le coeur de Jésus.
                     </p>
+                </div>
+                <!--<div class="w3-quarter">
+                    <img src="img/stAnneEtMarie.jpg" style="padding: 20px 0 0 0" width="150"/>
+                    <p class="w3-large"><strong>Bonus</strong></p>
+                    <p>
+                        Cette page est en construction.
+                    </p>-->
                 </div>
             </div>
         </div>
     </div>
 
     <!-- SECTION Blog -->
-    <div class="section conditions">
-        <h2 id="titreConditions">Blog</h2>
+    <div class="w3-container section-release" style="padding:40px 16px;background-color: #191919">
+        <h1 class="w3-center">Blog</h1>
 
-        <div>
+        <div class="w3-row-padding w3-center" style="margin-top:64px">
+            <div class="conteneurLigneArticle">
+                <div class="w3-quarter" style="border-style: ridge;border-color: white">
+                        <p class="w3-large">
+                            <i style="font-size: 0.8em">06/11/2022</i>
+                            <br>
+                            <strong>Prière à Marie</strong></p>
+                    <p>
+                        Douce Marie, laissez vos yeux se poser sur les miens, ensevelissez-moi de
+                        votre amour le plus parfait. Dans notre amour le plus profond l'un envers l'autre, permettez-moi
+                        de contempler à jamais votre coeur enflammé.
+                    </p>
+                </div>
 
+
+            </div>
         </div>
     </div>
 

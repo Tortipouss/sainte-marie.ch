@@ -197,7 +197,7 @@ p, h1, h2, h3, h4, h5, h6, li, input, span, label {
         margin-right: auto;
     }
 
-    .divAPropos {
+    .divPresentationSection {
         width: auto
     }
 
@@ -207,14 +207,14 @@ p, h1, h2, h3, h4, h5, h6, li, input, span, label {
 }
 
 @media only screen and (min-width: 824px) {
-    .divAPropos {
+    .divPresentationSection {
         width: 600px
     }
 }
 
 /* Tablette */
 @media only screen and (min-width: 601px) {
-    #firstDivPropos, #secondDivPropos {
+    .conteneurLigneArticle {
         text-align: center;
         display: flex;
         margin: auto;
@@ -235,7 +235,7 @@ p, h1, h2, h3, h4, h5, h6, li, input, span, label {
         vertical-align: top;
     }
 
-    #firstDivPropos, #secondDivPropos {
+    .conteneurLigneArticle{
         text-align: center;
         display: contents;
         margin: auto;
@@ -269,7 +269,6 @@ div.intro {
     background-image: url("img/assomption.png");
     background-size: cover;
     background-repeat: no-repeat;
-    backdrop-filter: brightness(20%);
 }
 
 /*region Barre supérieure*/
