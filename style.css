@@ -381,3 +381,8 @@ input:checked + .slider:before {
     margin-bottom: 5px;
     margin-left: 15%;
 }
+
+.w3-quarter:not(.priere):hover{
+    background-color: rgba(180, 114, 60, 0.2);
+    border-radius: 10px;
+}

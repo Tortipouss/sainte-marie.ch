@@ -20,7 +20,7 @@
 
     body{
       background-image: url("../../img/404.jpg");
-      background-size: cover;
+      background-size: contain;
       font-family: Capriola, sans-serif;
       color: white;
     }
@@ -55,8 +55,31 @@
       width: 9%;
     }
 
-    .titre2{
-      margin-left: 0.8em;
+    #titreSite{
+      text-align: center;
+      font-size: 1.8em;
+      margin-top: 0.5em;
+    }
+
+    #lienAccueil:link, #lienAccueil:visited {
+      text-decoration: none;
+    }
+
+    #titreSite:hover{
+      text-decoration: underline;
+    }
+
+    h2, #contenu p{
+      margin-left: 1.5vw;
+    }
+
+    h2 {
+      margin-top: 2vw;
+      color: antiquewhite;
+    }
+
+    #sommaire {
+      margin-bottom: 4vw;
     }
 
   </style>
@@ -67,18 +90,19 @@
   <div id="firstDiv">
 
     <!-- Logo -->
-    <a href="https://sainte-marie.ch/">
+    <a id="lienAccueil" href="https://sainte-marie.ch/">
       <img id="home" src="../../img/logo.png" width="70em"/>
+      <p id="titreSite">sainte-marie.ch</p>
     </a>
 
     <!-- Titre de l'article -->
     <h1 id="articleTitle">Le scapulaire du sacré coeur de Jésus</h1>
 
     <!-- Illustration-->
-    <img id="imgPresentation" src="scapulaire-sacre-coeur.jpg">
+    <img alt="scapulaire du sacré coeur de jésus" id="imgPresentation" src="scapulaire-sacre-coeur.jpg">
 
-    <h2 class="titre2">Sommaire</h2>
-    <ul>
+    <h2>Sommaire</h2>
+    <ul id="sommaire">
       <li>Qu'est ce qu'un scapulaire ?</li>
       <li>Qu'est ce que ce scapulaire me confère ?</li>
       <li>Comment se faire imposer ce scapulaire ?</li>
@@ -86,6 +110,51 @@
       <li>Comment obtenir ce scapulaire ?</li>
       <li>Quand peut-on l'enlever ?</li>
     </ul>
+
+    <div id="contenu">
+      <p>
+        Des informations précises sur ce scapulaire sont disponible dans <a href="scapulaire_sacre_coeur.pdf" target="_blank">son livret</a> (publié en 1901).<br>
+      </p>
+      <h2>Qu'est ce qu'un scapulaire ?</h2>
+
+      <h2>Qu'est ce que ce scapulaire me confère ?</h2>
+
+      <h2>Comment se faire imposer ce scapulaire ?</h2>
+      <p>
+        Avant Vatican II, il fallait passer par un prêtre de la confrérie. <br>
+        Mais depuis, n'importe quel Prêtre ou Diacre peut faire imposer le scapulaire à n'importe quel fidèle.
+      </p>
+
+      <h2>A quoi s'engage t'on en se le fesant imposer ?</h2>
+      <p>
+        Sur le papier, il n'y a aucune autre obligation que celle de porter le scapulaire (p. 5).<br>
+        Pour toucher les indulgences, par-contre, il faudra prier la Vierge Marie encore et encore.<br>
+        Se lier d'amour envers elle, y développer une dévotion.
+      </p>
+
+      <h2>Quand peut-on l'enlever ?</h2>
+      <p><i>
+        "Il est nécessaire que les deux morceaux
+        d'étoffe soient séparés et pendent,<br> l'un sur
+        la poitrine et l'autre sur le dos ; qu'on le
+        porte toujours, nuit et jour,<br> sans cela on ne
+        pourrait gagner les indulgences." (p. 5-6)
+      </i></p>
+      <p>
+        Tel que strictement décrit dans le livret, on ne peut jamais s'en séparer.<br>
+        Même pas sous la douche ou pour aller se baigner (contrairement à ce que beaucoup peuvent dire).<br>
+        Pour ne pas l'abîmer et passer du temps à le secher,
+        Pie XII et Jean-Paul II<br> en avaient un second plastifié et résistant à l'eau.<br>
+        On notera que pour que le port ne soit pas interrompu, il faut d'abord <br> mettre sur soi le second scapulaire
+        et uniquement ensuite enlever le permier.
+      </p>
+
+      <h2>Comment obtenir ce scapulaire ?</h2>
+      <p>En l'achetant en ligne (Ex: <a href="https://parvis.ch/fr/chapelets-croix-divers/scapulaire-blanc-du-sacre-coeur">Parvis.ch</a>) ou en se rendant directement au sanctuaire N-D de Pellevoisin.</p>
+
+    </div>
+
+
   </div>
 </body>
 </html>
