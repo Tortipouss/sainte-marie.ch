@@ -60,8 +60,6 @@ a:link:hover, a:visited:hover {
     display: block
 }
 
-
-
 @media (max-width: 700px) {
     .home .credits-section a {
         width: 50%
@@ -73,8 +71,6 @@ a:link:hover, a:visited:hover {
         width: 100%
     }
 }
-
-
 
 
 .section > h2 {
@@ -121,8 +117,6 @@ p, h1, h2, h3, h4, h5, h6, li, input, span, label {
         width: 100%;
     }
 
-
-
     div.intro{
         background-position: center;
     }
@@ -162,6 +156,7 @@ p, h1, h2, h3, h4, h5, h6, li, input, span, label {
     }
 }
 
+/* Fond d'écran première section de la page d'accueil (Intro)  */
 div.intro {
     background-image: url("img/assomption.png");
     background-size: cover;
