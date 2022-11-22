@@ -16,77 +16,7 @@
 
     <!-- CSS -->
     <link rel="stylesheet" href="../../w3.css">
-    <style rel="stylesheet">
-
-        body {
-            background-image: url("../../img/pattern_blog.webp");
-            background-size: initial;
-            font-family: Capriola, sans-serif;
-            color: white;
-        }
-
-        html{
-            scroll-behavior: smooth;
-        }
-
-        #firstDiv {
-            background-color: #585956;
-            display: block;
-            margin: 1rem 6vw 1rem 6vw;
-            border-radius: 35px;
-            opacity: 0.9;
-            padding-bottom: 4px;
-        }
-
-        #articleTitle {
-            text-align: center;
-            padding-top: 1em;
-        }
-
-        #imgPresentation {
-            margin-right: auto;
-            margin-left: auto;
-            margin-top: 2em;
-            display: block;
-            width: 20vw;
-        }
-
-        #home {
-            margin-left: auto;
-            margin-right: auto;
-            padding-top: 2em;
-            display: block;
-            width: 9%;
-        }
-
-        #titreSite {
-            text-align: center;
-            font-size: 1.8em;
-            margin-top: 0.5em;
-        }
-
-        #lienAccueil:link, #lienAccueil:visited {
-            text-decoration: none;
-        }
-
-        #titreSite:hover {
-            text-decoration: underline;
-        }
-
-        h2, #contenu p, #contenu img{
-            margin-left: 1.5vw;
-        }
-
-        h2 {
-            margin-top: 2vw;
-            color: antiquewhite;
-        }
-
-        #sommaire {
-            margin-bottom: 4vw;
-        }
-
-    </style>
+    <link rel="stylesheet" href="../style.css">
 
     <link rel="icon" type="image/png" sizes="32x32" href="../../img/logo.png">
 </head>
@@ -104,6 +34,7 @@
 
     <!-- Illustration-->
     <img alt="scapulaire du sacré coeur de jésus" id="imgPresentation" src="scapulaire-sacre-coeur.jpg">
+    <p id="dateArticle">Le 19 novembre 2022</p>
 
     <h2>Sommaire</h2>
     <ul id="sommaire">
@@ -111,13 +42,13 @@
         <li>Qu'est ce que ce scapulaire me confère ?</li>
         <li>Comment se faire imposer ce scapulaire ?</li>
         <li>A quoi s'engage-t-on en se le faisant imposer ?</li>
-        <li>Comment obtenir ce scapulaire ?</li>
-        <li>La médaille-scapulaire</li>
         <li>Quand peut-on l'enlever ?</li>
+        <li>La médaille-scapulaire</li>
+        <li>Comment obtenir ce scapulaire ?</li>
     </ul>
 
     <div id="contenu">
-        <p>
+        <p id="descSup">
             Les informations précises sur ce scapulaire sont disponibles dans <a href="scapulaire_sacre_coeur.pdf"
                                                                                  target="_blank">son livret</a> (publié
             en 1901).<br>
@@ -128,17 +59,31 @@
         <h2>Qu'est ce qu'un scapulaire ?</h2>
         <img src="scapulaire_ficelles.jpg" width="300em"/>
         <img src="ND-de-Misericorde_Pellevoisin.jpg" width="300em">
-        <p>Ci-dessus, le scapulaire du sacré-cœur de Jésus. Sur la seconde image, c'est Marie (Notre-Dame de <br>
+        <p>Ci-dessus, le scapulaire du sacré-cœur de Jésus. Sur la seconde image, c'est Marie (Notre-Dame de 
             Pellevoisin) qui le porte.</p>
-        <p>Il s'agit ainsi d'un vêtement (et pas d'un collier), qui doit être béni et imposé par un prêtre ou <br>
-            un diacre, sous des prières propres à chaque scapulaire.<br>
-        On utilise le verbe "imposer" quand on parle de consacrer un scapulaire à un fidèle,<br>
+        <p>Il s'agit ainsi d'un vêtement (et pas d'un collier), qui doit être béni et imposé par un prêtre ou 
+            un diacre, sous des prières propres.
+        On utilise le verbe "imposer" quand on parle de consacrer un scapulaire à un fidèle,
             bien que c'est le fidèle qui demandera à se le faire consacrer.</p>
-        <p>Ce scapulaire est une dévotion qui permet de s'unir intimement, par le cœur Immaculé de Marie, Mère<br>
+
+
+        <!----------------------------------------->
+        <h2>Le scapulaire du Sacré-Cœur de Jésus</h2>
+        <p>Ce scapulaire est une dévotion qui permet de s'unir intimement, par le cœur Immaculé de Marie, Mère
             de Miséricorde, au cœur de Jésus qui a été transpercé à la croix.</p>
+        <p>Le 8 décembre 1876 à Pellevoisin (Diocèse de Bourges), la Vierge Marie confie à Estelle Faguette : 
+        "Vois les grâces que je répands sur ceux qui porteront le scapulaire avec confiance"
+        En disant ceci, écrira Estelle, la Sainte Vierge étandit ses mains ; il en tombait une pluie 
+        abondante, et dans chacune de ces gouttes, il me semblait voir les grâces écrites telles que piété, 
+        salut, confiance, conversion, santé.</p>
+        <p>En 1900, le pape Léon XIII reconnait officiellement le scapulaire du Sacré-Coeur et encourage 
+        tous les fidèles (baptisés ou catéchumènes de l'Église catholique) à le porter. De nombreuses 
+        indulgences lui sont accordées par l'Église.</p>
 
         <!----------------------------------------->
         <h2>Qu'est ce que ce scapulaire me confère ?</h2>
+        <img src="sacre_coeur_marie_jesus.jpg"/>
+
         <p>Tout d'abord, des indulgences (approuvées par le Pape Leon XIII). Pour être plus précis :</p>
         <ul>
             <li>Indulgences de dix ans et dix quarantaines ;</li>
@@ -147,69 +92,76 @@
                 <li>Tous les dimanches de l'Avant</li>
                 <li>Tous les jours des Quatres-Temps</li>
             </ol>
-            <br>
-            <li>Indulgences de sept ans et de sept quarantaines <br>
+            
+            <li>Indulgences de sept ans et de sept quarantaines 
                 chaque jour de la neuvaine qui précède la fête du sacré-cœur de Jésus</li>
         </ul>
-        <p>Mais il s'agit surtout d'un engagement envers le cœur de Jésus, par le biais de prières et dévotions <br>
+        <p>Mais il s'agit surtout d'un engagement envers le cœur de Jésus, par le biais de prières et dévotions 
             à Marie.</p>
+
 
         <!----------------------------------------->
         <h2>Comment se faire imposer ce scapulaire ?</h2>
         <p>
-            Avant Vatican II, il fallait passer par un prêtre de la confrérie. <br>
-            Mais depuis, n'importe quel prêtre ou diacre peut faire imposer le scapulaire à n'importe quel fidèle.<br><br>
-            Parlez-en à n'importe quel prêtre ou diacre, il s'aura ce qu'est un scapulaire.
+            Avant Vatican II, il fallait passer par un prêtre de la confrérie. 
+            Mais depuis, n'importe quel prêtre ou diacre peut faire imposer le scapulaire à n'importe quel fidèle.
+            Le déroulement de l'imposition du scapulaire peut être téléchargé <a href="Ceremonie_imposition_scapulaire.png">ici</a>.
         </p>
         <!----------------------------------------->
         <h2>A quoi s'engage-t-on en se le faisant imposer ?</h2>
+        <img src="marie_scapulaire.jpg">
         <p>
-            Sur le papier, il n'y a aucune autre obligation que celle de porter le scapulaire (p. 5).<br><br>
-            Pour toucher les indulgences, par-contre, il faudra prier la Vierge Marie encore et encore.<br>
-            Se lier d'amour envers elle, y développer une dévotion.<br>
-            De plus, il faudra se confesser et communier le jour auquel est attachée chaque indulgence plénière,<br>
-            à moins qu'on ait l'habitude de se confesser tous les huit jours.
+            Sur le papier, il n'y a aucune autre obligation que celle de porter le scapulaire (p. 5).
+            Pour toucher les indulgences, par-contre, il faudra prier la Vierge Marie encore et encore.
+            Se lier d'amour envers elle, y développer une dévotion.
+        </p>
+        <p>
+            De plus, si on applique strictement le livret, il faudra se confesser et communier le jour
+            auquel est attachée chaque indulgence plénière, à moins qu'on ait l'habitude de se confesser
+            tous les huit jours. Cependant, le sanctuaire de Pellevoisin fait aujourd'hui fi de cette 
+            dernière condition.
         </p>
 
         <!----------------------------------------->
         <h2>Quand peut-on l'enlever ?</h2>
         <p><i>
             "Il est nécessaire que les deux morceaux
-            d'étoffe soient séparés et pendent,<br> l'un sur
+            d'étoffe soient séparés et pendent, l'un sur
             la poitrine et l'autre sur le dos ; qu'on le
-            porte toujours, nuit et jour,<br> sans cela on ne
+            porte toujours, nuit et jour, sans cela on ne
             pourrait gagner les indulgences." (p. 5-6)
         </i></p>
         <p>
-            Tel que strictement décrit dans le livret, on ne peut jamais s'en séparer.<br>
-            Même pas sous la douche ou pour aller se baigner (contrairement à ce que beaucoup peuvent dire).<br>
+            Tel que strictement décrit dans le livret, on ne peut jamais s'en séparer.
+            Même pas sous la douche ou pour aller se baigner (contrairement à ce que beaucoup peuvent dire).
+            <br>
             Pour ne pas l'abîmer et passer du temps à le secher,
-            Pie XII et Jean-Paul II<br> en avaient un second plastifié et résistant à l'eau. (Ils portaient<br>
-            le scapulaire N-D du mont carmel).<br>
-            On notera que pour que le port ne soit pas interrompu, il faut d'abord <br> mettre sur soi le second
+            Pie XII et Jean-Paul II en avaient un second plastifié et résistant à l'eau. (Ils portaient
+            le scapulaire N-D du mont carmel).
+            On notera que pour que le port ne soit pas interrompu, il faut d'abord  mettre sur soi le second
             scapulaire
             et uniquement ensuite enlever le premier.
         </p>
         <p>
-            Certains diront qu'il faut le porter "comme un vêtement" et que conséquemment il peut être porté <br>
-            quand on le souhaite, de jour comme de nuit. Mais à nouveau, ça n'est pas ce qui est décrit<br>
-            dans son livret ! <br>D'autres diront qu'il doit être porté "moralement", jour comme nuit, mais <br>
-            qu'il peut être enlevé durant la douche (sans doute car il s'abimera et qu'il faudra du temps <br>
-            pour le sécher). Moralement, on peut en acheter un second et le faire plastifier. <br>
-            "Moralement" on peut aussi le remplacer par la médaille-scapulaire, par exemple quand on est <br>
+            Certains diront qu'il faut le porter "comme un vêtement" et que conséquemment il peut être porté 
+            quand on le souhaite, de jour comme de nuit. Mais à nouveau, ça n'est pas ce qui est décrit
+            dans son livret ! D'autres diront qu'il doit être porté "moralement", jour comme nuit, mais 
+            qu'il peut être enlevé durant la douche (sans doute car il s'abimera et qu'il faudra du temps 
+            pour le sécher). Moralement, on peut en acheter un second et le faire plastifier. 
+            "Moralement" on peut aussi le remplacer par la médaille-scapulaire, par exemple quand on est 
             sous la douche. (Voir le titre ci-dessous.) Cet argument n'est ainsi tout simplement pas valide !
         </p>
 
         <!----------------------------------------->
         <h2>La médaille-scapulaire</h2>
-        <p>Le pape St Pie X a concédé la faculté de remplacer l'étoffe par une médaille scapulaire. <br>
-        Cela prinicpalement car l'étoffe peut rapidement s'abimer (notemment si l'on vit dans des pays <br>
-            ou il fait chaud). <br>
-            La médaille-scapulaire a été autorisée dans le décret "Cum Sacra" de Pie X au 16 décembre 1910.
-        <br> Bien que la médaille soit autorisée, le saint-siège recommande fortement de porter le scapulaire sous <br>
+        <p>Le pape St Pie X a concédé la faculté de remplacer l'étoffe par une médaille scapulaire. 
+        Cela prinicpalement car l'étoffe peut rapidement s'abimer (notemment si l'on vit dans des pays 
+            ou il fait chaud). 
+            La médaille-scapulaire a été autorisée dans le décret "Cum Sacra" de Pie X au 16 décembre 1910.<br><br>
+         Bien que la médaille soit autorisée, le saint-siège recommande fortement de porter le scapulaire sous 
         forme d'étoffes, tel que la vierge Marie l'a demandée.
-        <br><br> Le recto de cette médaille doit porter l'effigie de Notre Seigneur Jésus-Christ montrant son<br>
-            Coeur très Sacré et le verso une image de la Bienheureuse Vierge Marie.<br><br>
+         Le recto de cette médaille doit porter l'effigie de Notre Seigneur Jésus-Christ montrant son
+            Coeur très Sacré et le verso une image de la Bienheureuse Vierge Marie.
         La médaille ci-dessous, par exemple, est une médaille valide: </p>
         <img src="medaille-scapulaire.png" width="400em">
         <p>
@@ -224,7 +176,7 @@
             En l'achetant en ligne (Ex: <a
                 href="https://parvis.ch/fr/chapelets-croix-divers/scapulaire-blanc-du-sacre-coeur">
             Parvis.ch</a>) ou en se rendant directement au sanctuaire N-D de Pellevoisin. <br>
-            Pour ce qui en est de la médaille-scapulaire, vérifiez bien avant de l'acheter que les 2 faces<br>
+            Pour ce qui en est de la médaille-scapulaire, vérifiez bien avant de l'acheter que les 2 faces
             soient conformes aux exigences !
         </p>
         <!----------------------------------------->

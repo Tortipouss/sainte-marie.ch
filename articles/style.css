@@ -1,0 +1,88 @@
+
+body {
+    background-image: url("../img/pattern_blog.webp");
+    background-size: initial;
+    font-family: Capriola, sans-serif;
+    color: white;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+#firstDiv {
+    background-color: #585956;
+    display: block;
+    margin: 1rem 6vw 1rem 6vw;
+    border-radius: 35px;
+    opacity: 0.9;
+    padding-bottom: 4px;
+}
+
+#dateArticle{
+    text-align: center;
+}
+
+#articleTitle {
+    text-align: center;
+    padding-top: 1em;
+}
+
+#imgPresentation {
+    margin-right: auto;
+    margin-left: auto;
+    margin-top: 2em;
+    display: block;
+    width: 20vw;
+}
+
+#home {
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 2em;
+    display: block;
+    width: 9%;
+}
+
+#titreSite {
+    text-align: center;
+    font-size: 1.8em;
+    margin-top: 0.5em;
+}
+
+#lienAccueil:link, #lienAccueil:visited {
+    text-decoration: none;
+}
+
+#titreSite:hover {
+    text-decoration: underline;
+}
+
+h2, #contenu p, #contenu img, h3{
+    margin-left: 1.5vw;
+}
+
+h2 {
+    margin-top: 2vw;
+    color: antiquewhite;
+}
+
+#sommaire {
+    margin-bottom: 4vw;
+}
+
+p:not(#descSup, #dateArticle, #titreSite), h1:not(#articleTitle), h2, h3, h4, h5, h6{
+    max-width: 780px;
+}
+
+
+@media only screen and (max-width: 700px) {
+    #imgPresentation{
+        width: 40vw;
+    }
+
+    #home{
+        width: 15vw;
+    }
+
+}
