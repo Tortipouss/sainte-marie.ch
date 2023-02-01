@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <title>Tout pour Marie !</title>
+
+    <!-- Police d'écriture Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Capriola&display=swap" rel="stylesheet">
+
+    <meta name="description" content="Blog de dévotion à la Sainte Vierge"/>
+    <meta property="og:title" content="Tout pour Marie">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="../../w3.css">
+    <link rel="stylesheet" href="../style.css">
+    <link rel="stylesheet" href="../sidebar.css">
+
+    <link rel="icon" type="image/png" sizes="32x32" href="../../img/logo.png">
+</head>
+<body>
+<div id="firstDiv">
+
+    <!-- Logo -->
+    <a id="lienAccueil" href="https://sainte-marie.ch/">
+        <img alt="logo" id="home" src="../../img/logo.png" width="70em"/>
+        <p id="titreSite">sainte-marie.ch</p>
+    </a>
+
+    <!-- Titre de l'article -->
+    <h1 id="articleTitle">L'enfer de Dante</h1>
+
+    <!-- Illustration-->
+    <img alt="scapulaire du sacré coeur de jésus" id="imgPresentation" src="miniature.jpg">
+    <p id="dateArticle">Le 1 février 2023</p>
+
+
+    <div class="sidebar">
+        <div>Pour aller plus loin</div>
+        <p>
+            "And Now I See" est disponible en langue originale sur le site de l'institut de l'évêque (Word on Fire institute).<br>
+            <i>Livraison depuis les États-Unis</i>.<br><br>
+
+            La Divine Comédie de Dante Alighieri est disponible à l'achat en librairie en Suisse.
+        </p>
+    </div>
+
+    <div id="contenu">
+        <p id="descSup">
+            En plein lecture du livre "And now I see" de l'évêque de Winona-Rochester (Mgr. Robert Barron), j'ai trouvé un passage
+            particulièrement attrayant. Il s'agit d'un résumé de l'enfer de Dante. Ci-dessous un extrait du livre que
+            j'ai numérisé et plus bas une version traduite si vous ne parlez pas anglais.
+        </p>
+
+        <!----------------------------------------->
+        <p>Langue originale (Anglais)</p>
+        <p onclick="displayEnglish()">Afficher</p>
+        <img id="an1" src="page0001.jpg" style="width: 60vw;display: none">
+        <img id="an2" src="page0002.jpg" style="width: 60vw;display: none">
+        <img id="an3" src="page0003.jpg" style="width: 60vw;display: none">
+
+        <p>Version traduite (français)</p>
+        <p onclick="displayFrench()">Afficher</p>
+        <img id="fr1" src="page0001fr.jpg" style="width: 60vw;display: none">
+        <img id="fr2" src="page0002fr.jpg" style="width: 60vw;display: none">
+        <img id="fr3" src="page0003fr.jpg" style="width: 60vw;display: none">
+
+    </div>
+
+    <script>
+        function displayEnglish(){
+            document.getElementById('an1').style.display = 'block';
+            document.getElementById('an2').style.display = 'block';
+            document.getElementById('an3').style.display = 'block';
+        }
+
+        function displayFrench(){
+            document.getElementById('fr1').style.display = 'block';
+            document.getElementById('fr2').style.display = 'block';
+            document.getElementById('fr3').style.display = 'block';
+        }
+    </script>
+
+</div>
+</body>
+</html>

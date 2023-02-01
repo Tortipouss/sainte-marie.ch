@@ -142,7 +142,7 @@ p, h1, h2, h3, h4, h5, h6, li, input, span, label {
     .w3-quarter{
         display: inline-block;
         width: 23%;
-        padding: 0 20px 0 20px;
+        padding: 20px 20px 0 20px;
         vertical-align: top;
         margin-top: 0;
     }

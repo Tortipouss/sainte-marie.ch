@@ -71,7 +71,7 @@ h2 {
     margin-bottom: 4vw;
 }
 
-p:not(#descSup, #dateArticle, #titreSite), h1:not(#articleTitle), h2, h3, h4, h5, h6{
+p:not(#descSup, #dateArticle, #titreSite), h1:not(#articleTitle), h2, h3, h4, h5, h6, li, pre{
     max-width: 780px;
 }
 
